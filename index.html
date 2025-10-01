@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./icons8-shopping-bag-48.png" type="image/x-icon">
   <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <title>فروشگاه اینترنتی دسترسی</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
   <header class="relative">
     <div class="home">
-      <div class="one">
-       <div>
-        <a href="" class="">
-          <img src="./logo.png" alt="" class="img">
-        </a>
-       </div>
-      <div>
-        <label for="box"></label>
-        <input type="search" id="box" placeholder="جستجوی محصولات" class="input">
-      </div>
-      <div class="">
-        <a href="" class="a">باشگاه مشتریان</a>
-        <a href="" class="a">بلاگ</a>
-        <a href="" class="a">ارتباط ما</a>
-        <a href="" class="a">درباره ما</a>
-      </div>
-      <div class="aks">
-        <img src="./icons8-add-shopping-cart-50.png" alt="" class="ask">
-      </div>
-      <div class="span">
-       <span>ورود و ثبت نام</span>
-      </div>
-     </div>
-     <div class="two">
-      <ul class="ul">
-        <li class="khane"><a href="" class="khane">خانه</a></li>
-        <li>
-          <select name="" id="list">
-            <option value="" class="b">لوازم جانبی موبایل و کامپیوتر</option>
-            <option value="" class="b">اسپیکر</option>
+      <div class="flex items-center justify-around py-5">
+        <div class="flex items-center justify-center gap-x-8">
+            <a href="#">
+              <img src="./logo.png" alt="Logo" class="w-24">
+            </a>
+          <div>
+            <input type="search" id="box" placeholder="جستجوی محصولات" class="bg-zinc-200 border-2 min-w-80 px-5 py-2 text-md rounded-xl outline-none shadow-lg placeholder:text-zinc-400">
+          </div>
+          <div class="flex items-center justify-center gap-x-5 text-stone-500">
+            <a href="" class="hover:text-stone-800 transition-all duration-200">باشگاه مشتریان</a>
+            <a href="" class="hover:text-stone-800 transition-all duration-200">بلاگ</a>
+            <a href="" class="hover:text-stone-800 transition-all duration-200">ارتباط ما</a>
+            <a href="" class="hover:text-stone-800 transition-all duration-200">درباره ما</a>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-x-5">
+          <div class="bg-zinc-200 inset-shadow-xl flex items-center justify-center rounded-xl px-4 py-3 cursor-pointer">
+            <i class="fas fa-shopping-cart text-red-500 text-xl transition-all duration-200 hover:text-blue-900"></i>
+          </div>
+          <button class="bg-blue-800 text-white text-sm rounded-xl px-4 py-3">ورود و ثبت نام</button>
+        </div>
+        </div>
+      <div class="two">
+        <ul class="ul">
+          <li class="khane"><a href="" class="khane">خانه</a></li>
+          <li>
+            <select name="" id="list">
+              <option value="" class="b">لوازم جانبی موبایل و کامپیوتر</option>
+              <option value="" class="b">اسپیکر</option>
 
-          </select>
-        </li>
-        <li> 
-          <select name="" id="listt">
-            <option value="" class="b">کابل-مبدل-رابط</option>
-          </select>
-        </li>
-        <li>
-          <select name="" id="listtt">
-            <option value="" class="b">لوازم تولید محتوا</option>
-          </select>
-        </li>
-        <li>
-          <select name="" id="listttt">
-            <option value="" class="b">لوازم شبکه</option>
-          </select>
-        </li>
-        <li>
-          <select name="" id="listtttt">
-            <option value="" class="b">کنسول بازی ولوازم جانبی</option>
-          </select>
-        </li>
-        <li>
-          <select name="" id="listttttt">
-            <option value="" class="b">لوازم خانگی و شخصی</option>
-          </select>
-        </li>
-        <li>
-          <select name="" id="listtttttt">
-            <option value="" class="b">برندها</option>
-          </select>
-        </li>
-       </ul>
-     </div>
+            </select>
+          </li>
+          <li>
+            <select name="" id="listt">
+              <option value="" class="b">کابل-مبدل-رابط</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="listtt">
+              <option value="" class="b">لوازم تولید محتوا</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="listttt">
+              <option value="" class="b">لوازم شبکه</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="listtttt">
+              <option value="" class="b">کنسول بازی ولوازم جانبی</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="listttttt">
+              <option value="" class="b">لوازم خانگی و شخصی</option>
+            </select>
+          </li>
+          <li>
+            <select name="" id="listtttttt">
+              <option value="" class="b">برندها</option>
+            </select>
+          </li>
+        </ul>
+      </div>
     </div>
- 
+
   </header>
   <div></div>
 </body>
+
 </html>
