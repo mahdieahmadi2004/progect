@@ -11,16 +11,17 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <header class="relative">
-    <div class="home">
+<body class="bg-stone-200">
+  <header class="relative bg-white">
+    <div>
       <div class="flex items-center justify-around py-5">
         <div class="flex items-center justify-center gap-x-8">
-            <a href="#">
-              <img src="./logo.png" alt="Logo" class="w-24">
-            </a>
+          <a href="#">
+            <img src="./logo.png" alt="Logo" class="w-24">
+          </a>
           <div>
-            <input type="search" id="box" placeholder="جستجوی محصولات" class="bg-zinc-200 border-2 min-w-80 px-5 py-2 text-md rounded-xl outline-none shadow-lg placeholder:text-zinc-400">
+            <input type="search" id="box" placeholder="جستجوی محصولات"
+              class="bg-zinc-200 border-2 min-w-80 px-5 py-2 text-md rounded-xl outline-none shadow-lg placeholder:text-zinc-400">
           </div>
           <div class="flex items-center justify-center gap-x-5 text-stone-500">
             <a href="" class="hover:text-stone-800 transition-all duration-200">باشگاه مشتریان</a>
@@ -35,46 +36,89 @@
           </div>
           <button class="bg-blue-800 text-white text-sm rounded-xl px-4 py-3">ورود و ثبت نام</button>
         </div>
-        </div>
-      <div class="two">
-        <ul class="ul">
-          <li class="khane"><a href="" class="khane">خانه</a></li>
-          <li>
-            <select name="" id="list">
-              <option value="" class="b">لوازم جانبی موبایل و کامپیوتر</option>
-              <option value="" class="b">اسپیکر</option>
-
-            </select>
+      </div>
+      <div class="navbar">
+        <ul class="flex items-start justify-around text-zinc-700 text-sm">
+          <li class="flex-1 text-center py-5 hover:border-b-2 hover:border-b-red-400 cursor-pointer hover:text-red-400">
+            <span class="cursor-pointer hover:text-red-400">خانه</span>
           </li>
-          <li>
-            <select name="" id="listt">
-              <option value="" class="b">کابل-مبدل-رابط</option>
-            </select>
+          <li class="flex-1 text-center py-5 hover:border-b-2 hover:border-b-red-400 cursor-pointer hover:text-red-400">
+            <span>لوازم جانبی موبایل و کامپیوتر</span>
+            <div>
+              <ul class="flex flex-col min-w-80 items-start justify-center pt-3 rounded-b-md text-zinc-700">
+                <li>ماوس و کیبورد</li>
+                <li>اسپیکر</li>
+                <li>هولدر و نگهدارنده</li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <select name="" id="listtt">
-              <option value="" class="b">لوازم تولید محتوا</option>
-            </select>
+          <li class="flex-1 text-center py-5 hover:border-b-2 hover:border-b-red-400 cursor-pointer hover:text-red-400">
+            <span>کابل-مبدل-رابط</span>
+            <div>
+              <ul class="flex flex-col min-w-80 items-start justify-center pt-3 rounded-b-md text-zinc-700">
+                <li>کابل HDMI</li>
+                <li>کابل پرینتر</li>
+                <li>کابل هارد اکسترنال</li>
+                <li>کابل AUX</li>
+                <li>کابل اپتیکال</li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <select name="" id="listttt">
-              <option value="" class="b">لوازم شبکه</option>
-            </select>
+          <li class="flex-1 text-center py-5 hover:border-b-2 hover:border-b-red-400 cursor-pointer hover:text-red-400">
+            <span>لوازم تولید محتوا</span>
+            <div>
+              <ul class="flex flex-col min-w-80 items-start justify-center pt-3 rounded-b-md text-zinc-700">
+                <li>میکروفون</li>
+                <li>رینگ لایت</li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <select name="" id="listtttt">
-              <option value="" class="b">کنسول بازی ولوازم جانبی</option>
-            </select>
+          <li class="flex-1 text-center py-5 hover:border-b-2 hover:border-b-red-400 cursor-pointer hover:text-red-400">
+            <span>لوازم شبکه</span>
+            <div>
+              <ul class="flex flex-col min-w-80 items-start justify-center pt-3 rounded-b-md text-zinc-700">
+                <li>روتر</li>
+                <li>هاب شبکه</li>
+                <li>مودم همراه</li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <select name="" id="listttttt">
-              <option value="" class="b">لوازم خانگی و شخصی</option>
-            </select>
+          <li class="flex-1 text-center py-5 hover:border-b-2 hover:border-b-red-400 cursor-pointer hover:text-red-400">
+            <span>کنسول بازی ولوازم جانبی</span>
+            <div>
+              <ul class="flex flex-col min-w-80 items-start justify-center pt-3 rounded-b-md text-zinc-700">
+                <li>کیف</li>
+                <li>کنسول</li>
+                <li>دسته بازی</li>
+                <li>شارژر دسته</li>
+              </ul>
+            </div>
           </li>
-          <li>
-            <select name="" id="listtttttt">
-              <option value="" class="b">برندها</option>
-            </select>
+          <li class="flex-1 text-center py-5 hover:border-b-2 hover:border-b-red-400 cursor-pointer hover:text-red-400">
+            <span>لوازم خانگی و شخصی</span>
+            <div>
+              <ul class="flex flex-col min-w-80 items-start justify-center pt-3 rounded-b-md text-zinc-700">
+                <li>انواع گجت های جذاب</li>
+                <li>باتری و شارژر</li>
+                <li>اندروید باکس</li>
+                <li>آنتن رومیزی</li>
+                <li>ساعت هوشمند</li>
+                <li>رابط برق</li>
+              </ul>
+            </div>
+          </li>
+          <li class="flex-1 text-center py-5 hover:border-b-2 hover:border-b-red-400 cursor-pointer hover:text-red-400">
+            <span>برندها</span>
+            <div>
+              <ul class="flex flex-col min-w-80 items-start justify-center pt-3 rounded-b-md text-zinc-700">
+                <li>هایلو</li>
+                <li>دای هارد</li>
+                <li>اسکای کندی</li>
+                <li>اپل</li>
+                <li>انکر</li>
+                <li>جی پی</li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
