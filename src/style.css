@@ -102,6 +102,10 @@
   display: flex;
 }
 
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 15px !important;
+}
+
 #list{
 border: none;
 margin: 25px;

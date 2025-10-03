@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 
 <head>
@@ -13,7 +12,7 @@
 </head>
 
 <body class="bg-stone-200">
-  <nav class="relative bg-white">
+  <nav class="bg-white fixed top-0 left-0 right-0 z-50">
     <div>
       <div class="flex items-center justify-around py-5">
         <div class="flex items-center justify-center gap-x-8">
@@ -127,7 +126,7 @@
   </nav>
 
   <header class="flex items-center justify-center my-10">
-    <div class="swiper mySwiper min-h-80 w-5/6 rounded-xl">
+    <div class="swiper headerSwiper min-h-80 w-5/6 rounded-xl">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="./banner-dastresi-1 (1).png" />
@@ -144,83 +143,421 @@
     </div>
   </header>
 
-  <section class="flex flex-col items-center gap-10 px-24 w-full min-h-screen">
-    <div class="flex flex-col bg-stone-300 w-full min-h-80 rounded-xl px-10 py-6 gap-6">
+  <main class="flex flex-col items-center justify-center w-full gap-12">
+    <section class="flex flex-col items-center gap-10 px-24 w-full">
+      <div class="flex flex-col bg-stone-300 w-full rounded-xl px-10 py-6 gap-6">
+        <div class="flex items-center justify-between font-bold text-stone-600">
+          <label class="text-4xl"><i class="far fa-percent text-red-500"></i>تخفیف های روزانه دسترسی</label>
+          <span class="text-2xl ">10:20:30</span>
+        </div>
+
+        <div class="flex items-center justify-center gap-6">
+          <div class="flex w-3/5 items-center justify-center gap-6">
+            <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
+              <img src="./asset/product6.jpg" class="rounded-xl" />
+              <figcaption>هندزفری بلوتوثی ورزشی SoundCore V40i انکر مدل Anker A3878</figcaption>
+              <div class="w-full flex items-center justify-between text-md">
+                <span class="line-through text-stone-500">6,060,000</span>
+                <span class="text-red-500">360,000 تومان تخیف</span>
+              </div>
+              <span class="w-full text-left text-lg font-bold text-blue-800">5,700,000 تومان</span>
+            </figure>
+
+            <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
+              <img src="./asset/product7.jpg" class="rounded-xl" />
+              <figcaption>شارژر دیواری 30 واتی Zolo انکر مدل Anker A2698</figcaption>
+              <div class="w-full flex items-center justify-between text-md">
+                <span class="line-through text-stone-500">1,150,000</span>
+                <span class="text-red-500">200,000 تومان تخفیف</span>
+              </div>
+              <span class="w-full text-left text-lg font-bold text-blue-800">950,000 تومان</span>
+            </figure>
+          </div>
+
+          <div class="flex flex-col w-2/5 items-center justify-center gap-6">
+            <figure class="flex items-center justify-center px-5 gap-2 rounded-xl bg-white">
+              <img src="./asset/product8.jpg" class="w-2/5 rounded-xl" />
+              <div class="flex flex-col">
+                <figcaption>شارژر دیواری 150 واتی گان پرایم انکر مدل Anker A2340</figcaption>
+                <div class="w-full flex items-center justify-between text-md">
+                  <span class="line-through text-stone-500">7,800,000</span>
+                  <span class="text-red-500">200,000 تومان تخفیف</span>
+                </div>
+                <span class="w-full text-left text-lg font-bold text-blue-800">1,397,000 تومان</span>
+            </figure>
+
+            <figure class="flex items-center justify-center px-5 gap-2 rounded-xl bg-white">
+              <img src="./asset/product9.jpg" class="w-2/5 rounded-xl" />
+              <div class="flex flex-col">
+                <figcaption>پاوربانک 10000 میلی آمپری 20 واتی وایرلس شارژ مگ سیف پاورولوژی مدل Powerology Ppbcha34
+                </figcaption>
+                <div class="w-full flex items-center justify-between text-md">
+                  <span class="line-through text-stone-500">7,800,000</span>
+                  <span class="text-red-500">200,000 تومان تخفیف</span>
+                </div>
+                <span class="w-full text-left text-lg font-bold text-blue-800">1,975,000 تومان</span>
+            </figure>
+
+            <figure class="flex items-center justify-center px-5 gap-2 rounded-xl bg-white">
+              <img src="./asset/product10.jpg" class="w-2/5 rounded-xl" />
+              <div class="flex flex-col">
+                <figcaption>فرستنده HDMI بی سیم پاورولوژی مدل Powerlogy Phdmrabk</figcaption>
+                <div class="w-full flex items-center justify-between text-md">
+                  <span class="line-through text-stone-500">7,800,000</span>
+                  <span class="text-red-500">200,000 تومان تخفیف</span>
+                </div>
+                <span class="w-full text-left text-lg font-bold text-blue-800">4,997,000 تومان</span>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col items-center justify-center w-full gap-5">
+      <span class="text-2xl font-bold">دسته‌بندی‌های منتخب</span>
+      <div class="swiper categorySwiper w-5/6 rounded-xl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./asset/adaptor.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/battery.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/cable.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/gaming.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/handsfree.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/holder.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/mobadel.png" />
+          </div>
+        </div>
+
+        <div class="swiper-button-prev bg-white p-5 w-5 h-5 rounded-full"></div>
+        <div class="swiper-button-next bg-white p-5 w-5 h-5 rounded-full"></div>
+      </div>
+    </section>
+
+    <section class="flex flex-col bg-stone-300 w-5/6 rounded-xl px-10 py-6 gap-6">
       <div class="flex items-center justify-between font-bold text-stone-600">
-        <label class="text-4xl"><i class="far fa-percent text-red-500"></i>تخفیف های روزانه دسترسی</label>
-        <span class="text-2xl ">10:20:30</span>
+        <label class="text-2xl">همین الان موجود شد...</label>
+        <span class="text-sm">مشاهده همه محصولات<i class="fas fa-angle-left"></i></span>
       </div>
-
-      <div class="flex items-center justify-center gap-6">
-        <div class="flex w-3/5 items-center justify-center gap-6">
-          <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
-            <img src="./asset/product6.jpg" class="rounded-xl" />
-            <figcaption>هندزفری بلوتوثی ورزشی SoundCore V40i انکر مدل Anker A3878</figcaption>
-            <div class="w-full flex items-center justify-between text-md">
-              <span class="line-through text-stone-500">6,060,000</span>
-              <span class="text-red-500">360,000 تومان تخیف</span>
-            </div>
-            <span class="w-full text-left text-lg font-bold text-blue-800">5,700,000 تومان</span>
-          </figure>
-
-          <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
-            <img src="./asset/product7.jpg" class="rounded-xl" />
-            <figcaption>شارژر دیواری 30 واتی Zolo انکر مدل Anker A2698</figcaption>
-            <div class="w-full flex items-center justify-between text-md">
-              <span class="line-through text-stone-500">1,150,000</span>
-              <span class="text-red-500">200,000 تومان تخفیف</span>
-            </div>
-            <span class="w-full text-left text-lg font-bold text-blue-800">950,000 تومان</span>
-          </figure>
+      <div class="swiper availableSwiper w-full rounded-xl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
+              <img src="./asset/product1.jpg" class="rounded-xl" />
+              <figcaption>هندزفری بلوتوثی ورزشی SoundCore V40i انکر مدل Anker A3878</figcaption>
+              <div class="w-full flex items-center justify-between text-md">
+                <span class="line-through text-stone-500">6,060,000</span>
+                <span class="text-red-500">360,000 تومان تخیف</span>
+              </div>
+              <span class="w-full text-left text-lg font-bold text-blue-800">5,700,000 تومان</span>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
+              <img src="./asset/product2.jpg" class="rounded-xl" />
+              <figcaption>هندزفری بلوتوثی ورزشی SoundCore V40i انکر مدل Anker A3878</figcaption>
+              <div class="w-full flex items-center justify-between text-md">
+                <span class="line-through text-stone-500">6,060,000</span>
+                <span class="text-red-500">360,000 تومان تخیف</span>
+              </div>
+              <span class="w-full text-left text-lg font-bold text-blue-800">5,700,000 تومان</span>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
+              <img src="./asset/product3.jpg" class="rounded-xl" />
+              <figcaption>هندزفری بلوتوثی ورزشی SoundCore V40i انکر مدل Anker A3878</figcaption>
+              <div class="w-full flex items-center justify-between text-md">
+                <span class="line-through text-stone-500">6,060,000</span>
+                <span class="text-red-500">360,000 تومان تخیف</span>
+              </div>
+              <span class="w-full text-left text-lg font-bold text-blue-800">5,700,000 تومان</span>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
+              <img src="./asset/product4.jpg" class="rounded-xl" />
+              <figcaption>هندزفری بلوتوثی ورزشی SoundCore V40i انکر مدل Anker A3878</figcaption>
+              <div class="w-full flex items-center justify-between text-md">
+                <span class="line-through text-stone-500">6,060,000</span>
+                <span class="text-red-500">360,000 تومان تخیف</span>
+              </div>
+              <span class="w-full text-left text-lg font-bold text-blue-800">5,700,000 تومان</span>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
+              <img src="./asset/product5.jpg" class="rounded-xl" />
+              <figcaption>هندزفری بلوتوثی ورزشی SoundCore V40i انکر مدل Anker A3878</figcaption>
+              <div class="w-full flex items-center justify-between text-md">
+                <span class="line-through text-stone-500">6,060,000</span>
+                <span class="text-red-500">360,000 تومان تخیف</span>
+              </div>
+              <span class="w-full text-left text-lg font-bold text-blue-800">5,700,000 تومان</span>
+            </figure>
+          </div>
         </div>
 
-        <div class="flex flex-col w-2/5 items-center justify-center gap-6">
-          <figure class="flex items-center justify-center px-5 gap-2 rounded-xl bg-white">
-            <img src="./asset/product8.jpg" class="w-2/5 rounded-xl" />
-            <div class="flex flex-col">
-              <figcaption>شارژر دیواری 150 واتی گان پرایم انکر مدل Anker A2340</figcaption>
-              <div class="w-full flex items-center justify-between text-md">
-                <span class="line-through text-stone-500">7,800,000</span>
-                <span class="text-red-500">200,000 تومان تخفیف</span>
-              </div>
-              <span class="w-full text-left text-lg font-bold text-blue-800">1,397,000 تومان</span>
-          </figure>
-
-          <figure class="flex items-center justify-center px-5 gap-2 rounded-xl bg-white">
-            <img src="./asset/product9.jpg" class="w-2/5 rounded-xl" />
-            <div class="flex flex-col">
-              <figcaption>پاوربانک 10000 میلی آمپری 20 واتی وایرلس شارژ مگ سیف پاورولوژی مدل Powerology Ppbcha34</figcaption>
-              <div class="w-full flex items-center justify-between text-md">
-                <span class="line-through text-stone-500">7,800,000</span>
-                <span class="text-red-500">200,000 تومان تخفیف</span>
-              </div>
-              <span class="w-full text-left text-lg font-bold text-blue-800">1,975,000 تومان</span>
-          </figure>
-
-          <figure class="flex items-center justify-center px-5 gap-2 rounded-xl bg-white">
-            <img src="./asset/product10.jpg" class="w-2/5 rounded-xl" />
-            <div class="flex flex-col">
-              <figcaption>فرستنده HDMI بی سیم پاورولوژی مدل Powerlogy Phdmrabk</figcaption>
-              <div class="w-full flex items-center justify-between text-md">
-                <span class="line-through text-stone-500">7,800,000</span>
-                <span class="text-red-500">200,000 تومان تخفیف</span>
-              </div>
-              <span class="w-full text-left text-lg font-bold text-blue-800">4,997,000 تومان</span>
-          </figure>
-        </div>
+        <div class="swiper-button-prev bg-white p-5 w-5 h-5 rounded-full"></div>
+        <div class="swiper-button-next bg-white p-5 w-5 h-5 rounded-full"></div>
       </div>
-    </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="flex flex-col items-center justify-center w-5/6 gap-5">
+      <span class="font-bold text-2xl">چرا دسترسی رو برای خرید انتخاب کنیم؟</span>
+      <div class="flex items-center justify-center w-full gap-10">
+        <figure class="flex flex-col items-center justify-center text-center px-5 py-10 gap-4">
+          <img src="./phone.png" class="w-16" />
+          <figcaption class="font-bold text-stone-500 text-sm">مشاوره تخصصی برای خرید محصول</figcaption>
+          <span class="text-xs">برای خرید هر محصول با تیم دسترسی در ارتباط باشید تا بهترین انتخاب رو انجام دهید.</span>
+        </figure>
+        <figure class="flex flex-col items-center justify-center text-center px-5 py-10 gap-4">
+          <img src="./price.png" class="w-16" />
+          <figcaption class="font-bold text-stone-500 text-sm">قیمت مناسب با بالاترین کیفیت</figcaption>
+          <span class="text-xs">گروه دسترسی در تلاش است که کالای با کیفیت را با مناسب‌ترین قیمت به دست شما
+            برساند.</span>
+        </figure>
+        <figure class="flex flex-col items-center justify-center text-center px-5 py-10 gap-4">
+          <img src="./car.png" class="w-16" />
+          <figcaption class="font-bold text-stone-500 text-sm">ارسال سریع</figcaption>
+          <span class="text-xs">ارسال از طریق تیپاکس، پست پیشتاز و پیک موتوری (ویژه تهران) صورت می گیرد.</span>
+        </figure>
+        <figure class="flex flex-col items-center justify-center text-center px-5 py-10 gap-4">
+          <img src="./barr.png" class="w-16" />
+          <figcaption class="font-bold text-stone-500 text-sm">امکان خرید حضوری</figcaption>
+          <span class="text-xs">مشتری گرامی جهت خرید حضوری می‌توانید به آدرس مندرج در پایین سایت مراجعه نمایید.</span>
+        </figure>
+      </div>
+    </section>
+
+    <section class="flex flex-col bg-stone-300 w-5/6 rounded-xl px-10 py-6 gap-6">
+      <div class="flex items-center justify-between font-bold text-stone-600">
+        <label class="text-2xl">پرفروش ترین محصولات</label>
+        <span class="text-sm">مشاهده همه محصولات<i class="fas fa-angle-left"></i></span>
+      </div>
+      <div class="swiper availableSwiper w-full rounded-xl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
+              <img src="./asset/product2.jpg" class="rounded-xl" />
+              <figcaption>هندزفری بلوتوثی ورزشی SoundCore V40i انکر مدل Anker A3878</figcaption>
+              <div class="w-full flex items-center justify-between text-md">
+                <span class="line-through text-stone-500">6,060,000</span>
+                <span class="text-red-500">360,000 تومان تخیف</span>
+              </div>
+              <span class="w-full text-left text-lg font-bold text-blue-800">5,700,000 تومان</span>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
+              <img src="./asset/product3.jpg" class="rounded-xl" />
+              <figcaption>هندزفری بلوتوثی ورزشی SoundCore V40i انکر مدل Anker A3878</figcaption>
+              <div class="w-full flex items-center justify-between text-md">
+                <span class="line-through text-stone-500">6,060,000</span>
+                <span class="text-red-500">360,000 تومان تخیف</span>
+              </div>
+              <span class="w-full text-left text-lg font-bold text-blue-800">5,700,000 تومان</span>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
+              <img src="./asset/product1.jpg" class="rounded-xl" />
+              <figcaption>هندزفری بلوتوثی ورزشی SoundCore V40i انکر مدل Anker A3878</figcaption>
+              <div class="w-full flex items-center justify-between text-md">
+                <span class="line-through text-stone-500">6,060,000</span>
+                <span class="text-red-500">360,000 تومان تخیف</span>
+              </div>
+              <span class="w-full text-left text-lg font-bold text-blue-800">5,700,000 تومان</span>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
+              <img src="./asset/product4.jpg" class="rounded-xl" />
+              <figcaption>هندزفری بلوتوثی ورزشی SoundCore V40i انکر مدل Anker A3878</figcaption>
+              <div class="w-full flex items-center justify-between text-md">
+                <span class="line-through text-stone-500">6,060,000</span>
+                <span class="text-red-500">360,000 تومان تخیف</span>
+              </div>
+              <span class="w-full text-left text-lg font-bold text-blue-800">5,700,000 تومان</span>
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="flex flex-col items-center justify-center px-5 py-10 gap-6 rounded-xl bg-white">
+              <img src="./asset/product5.jpg" class="rounded-xl" />
+              <figcaption>هندزفری بلوتوثی ورزشی SoundCore V40i انکر مدل Anker A3878</figcaption>
+              <div class="w-full flex items-center justify-between text-md">
+                <span class="line-through text-stone-500">6,060,000</span>
+                <span class="text-red-500">360,000 تومان تخیف</span>
+              </div>
+              <span class="w-full text-left text-lg font-bold text-blue-800">5,700,000 تومان</span>
+            </figure>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev bg-white p-5 w-5 h-5 rounded-full"></div>
+        <div class="swiper-button-next bg-white p-5 w-5 h-5 rounded-full"></div>
+      </div>
+    </section>
+
+    <section class="flex flex-col items-start justify-center w-5/6 gap-5">
+      <span class="text-2xl font-bold text-stone-600">محبوب ترین برندها</span>
+      <div class="swiper categorySwiper w-full rounded-xl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./asset/camelion.jpg" class="rounded-xl" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/powerology.jpg" class="rounded-xl" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/mcdodo.jpg" class="rounded-xl" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/inoben.jpg" class="rounded-xl" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/ravpower.jpg" class="rounded-xl" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/camelion.jpg" class="rounded-xl" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/powerology.jpg" class="rounded-xl" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/mcdodo.jpg" class="rounded-xl" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/inoben.jpg" class="rounded-xl" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./asset/ravpower.jpg" class="rounded-xl" />
+          </div>
+        </div>
+
+        <div class="swiper-button-prev bg-white p-5 w-5 h-5 rounded-full"></div>
+        <div class="swiper-button-next bg-white p-5 w-5 h-5 rounded-full"></div>
+      </div>
+    </section>
+
+    <section class="flex flex-col items-start justify-center w-5/6 gap-5">
+      <span class="text-2xl font-bold text-stone-600">آخرین مقالات</span>
+      <div class="swiper blogSwiper w-full rounded-xl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex items-center justify-center gap-5">
+            <figure class="flex flex-col items-center justify-start gap-6 min-h-60 rounded-xl bg-white">
+              <img src="./asset/post1.jpg" class="rounded-xl" />
+              <figcaption class="w-full px-5 pb-5">خرید بهترین هندزفری سیمی تا ۵۰۰ تومان</figcaption>
+            </figure>
+                        <figure class="flex flex-col items-center justify-start gap-6 min-h-60 rounded-xl bg-white">
+              <img src="./asset/post8.jpg" class="rounded-xl" />
+              <figcaption class="w-full px-5 pb-5">معرفی ۵ مدل از بهترین میکروفون بویا</figcaption>
+            </figure>
+                        <figure class="flex flex-col items-center justify-start gap-6 min-h-60 rounded-xl bg-white">
+              <img src="./asset/post7.jpg" class="rounded-xl" />
+              <figcaption class="w-full px-5 pb-5">راهنمای خرید بهترین میکروفون زیر ۱ میلیون تومان</figcaption>
+            </figure>
+                        <figure class="flex flex-col items-center justify-start gap-6 min-h-60 rounded-xl bg-white">
+              <img src="./asset/post6.jpg" class="rounded-xl" />
+              <figcaption class="w-full px-5 pb-5">بهترین هارد اکسترنال SSD: سرعت و امنیت در کنار هم!</figcaption>
+            </figure>
+          </div>
+
+          <div class="swiper-slide flex items-center justify-center gap-5">
+            <figure class="flex flex-col items-center justify-start gap-6 min-h-60 rounded-xl bg-white">
+              <img src="./asset/post5.jpg" class="rounded-xl" />
+              <figcaption class="w-full px-5 pb-5">چرا آیفون من شارژ نمی‌شود؟ راهنمای رفع مشکل</figcaption>
+            </figure>
+                        <figure class="flex flex-col items-center justify-start gap-6 min-h-60 rounded-xl bg-white">
+              <img src="./asset/post4.jpg" class="rounded-xl" />
+              <figcaption class="w-full px-5 pb-5">کابل MFi چیست؟ : ناجی باتری آیفون شما یا یک حقه تبلیغات...</figcaption>
+            </figure>
+                        <figure class="flex flex-col items-center justify-start gap-6 min-h-60 rounded-xl bg-white">
+              <img src="./asset/post3.jpg" class="rounded-xl" />
+              <figcaption class="w-full px-5 pb-5">شارژ بی‌ سیم در برابر شارژ با کابل: کدام یک برای آیفون ...</figcaption>
+            </figure>
+                        <figure class="flex flex-col items-center justify-start gap-6 min-h-60 rounded-xl bg-white">
+              <img src="./asset/post2.jpg" class="rounded-xl" />
+              <figcaption class="w-full px-5 pb-5">بهترین کابل شارژ برای آیفون: راهنمای کامل انتخاب در ۵ د...</figcaption>
+            </figure>
+          </div>
+        </div>
+    
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    const swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".headerSwiper", {
       effect: "fade",
       fadeEffect: {
         crossFade: true,
       },
       speed: 1500,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+
+    const categorySwiper = new Swiper(".categorySwiper", {
+      slidesPerView: 6,
+      spaceBetween: 20,
+      fadeEffect: {
+        crossFade: true,
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+
+    const availableSwiper = new Swiper(".availableSwiper", {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      fadeEffect: {
+        crossFade: true,
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+
+    const blogSwiper = new Swiper(".blogSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      fadeEffect: {
+        crossFade: true,
+      },
       loop: true,
       pagination: {
         el: ".swiper-pagination",
